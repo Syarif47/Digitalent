@@ -1,0 +1,103 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color:#ffffff ;
+        font-family: Arial, Helvetica, Times New Roman;
+        color: #969696;
+      }
+      nav{
+        margin: auto;
+        text-align: center;
+        width: 100%;
+      }
+      nav ul ul{
+        display: none;
+      }
+      nav ul li:hover>ul{
+        display: block;
+        width: 150px;
+      }
+      nav ul{
+        background-color: #ec0303;
+        padding: 0 20px;
+        list-style: none;
+        position: relative;
+        display: inline-table;
+        width: 90%;
+      }
+      nav ul:after{
+        content:"";
+        clear: both;
+        display: block;
+      }
+      nav ul li{
+        float: left;
+      }
+      nav ul li:hover{
+        background-color: #363636;
+      }
+      nav ul li :hover a{
+        color: #fff;
+      }
+      nav ul li a{
+        background-color: #f10d0d;
+        display: block;
+        padding: 25px;
+        color: #fff;
+        text-decoration: none;
+      }
+      nav ul ul{
+        float: none;
+        border-top: 1px solid #e40404;
+        border-bottom: 1px solid #e40606;
+        position: relative;
+      }
+      nav ul ul li a{
+        padding: 15px 40px;
+        color: #fff;
+      }
+      nav ul ul li a:hover{
+        background-color: #696969;
+      }
+      nav ul ul ul{
+        position: absolute;
+        left: 100%;
+        top: 0;
+      }
+      a {
+        background-color: #e00505;
+        font: Helvetica;
+        color: #ffffff;
+      }
+    </style>
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+          <li><a href="#">Master Data</a>
+        <ul>
+          <li><a href="#">Data Karyawan</a></li>
+          <li><a href="#">Data Pemesanan</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Laporan</a>
+        <ul>
+          <li><a href="#">Laporan Data Karyawan</a></li>
+          <li><a href="#">Laporan Data Pemesanan</a></li>
+        </ul>
+        </li>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>

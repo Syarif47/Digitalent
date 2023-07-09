@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Latihan Navbar</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color:#ffffff ;
+			font-family: Arial, Helvetica, Times New Roman;
+			color: #969696;
+		}
+		nav{
+			margin: auto;
+			text-align: center;
+			width: 100%;
+		}
+		nav ul ul{
+			display: none;
+		}
+		nav ul li:hover>ul{
+			display: block;
+			width: 150px;
+		}
+		nav ul{
+			background-color: #1b0980;
+			padding: 0 20px;
+			list-style: none;
+			position: relative;
+			display: inline-table;
+			width: 90%;
+		}
+		nav ul:after{
+			content:"";
+			clear: both;
+			display: block;
+		}
+		nav ul li{
+			float: left;
+		}
+		nav ul li:hover{
+			background-color: #363636;
+		}
+		nav ul li :hover a{
+			color: #070100;
+		}
+		nav ul li a{
+			background-color: #06076e;
+			display: block;
+			padding: 25px;
+			color: #fff;
+			text-decoration: none;
+		}
+		nav ul ul{
+			float: none;
+			border-top: 1px solid #53bd84;
+			border-bottom: 1px solid #53bd84;
+			position: relative;
+		}
+		nav ul ul li a{
+			padding: 15px 40px;
+			color: #fff;
+		}
+		nav ul ul li a:hover{
+			background-color: #696969;
+		}
+		nav ul ul ul{
+			position: absolute;
+			left: 100%;
+			top: 0;
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta http-equiv="" X-UA-Compatible="" content="IE=edge">
+	<meta name="viewport" content="width=device -width, initial-scale=1.0">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Master Data</a>
+			<ul>
+				<li><a href="#">Data Karyawan</a></li>
+				<li><a href="#">Data Pemesanan</a></li>
+			</ul>
+			</li>
+			<li><a href="#">Laporan</a>
+			<ul>
+				<li><a href="#">Laporan Data Karyawan</a></li>
+				<li><a href="#">Laporan Data Pemesanan</a></li>
+			</ul>
+			</li>
+			<li><a href="#" onclick="Saya ingin Keluar">Logout</a></li>
+		</ul>
+
+	</nav>
+
+</body>
+
+</html>
